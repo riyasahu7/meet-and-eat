@@ -4,7 +4,8 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 # MongoDB Connection
-app.config["MONGO_URI"] = "YOUR_NEW_ATLAS_CONNECTION_STRING"
+
+app.config["MONGO_URI"] = "mongodb+srv://2k23cscys2311475_db_user:cscys@meetandeatcluster.0uo3mgi.mongodb.net/meet_and_eat?retryWrites=true&w=majority&appName=MeetAndEatCluster"
 mongo = PyMongo(app)
 
 
