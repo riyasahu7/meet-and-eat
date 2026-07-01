@@ -3,9 +3,9 @@ from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
 app = Flask(__name__)
-
 # MongoDB Connection
-app.config["MONGO_URI"] = "YOUR_NEW_ATLAS_CONNECTION_STRING"mongo = PyMongo(app)
+app.config["MONGO_URI"] = "YOUR_NEW_ATLAS_CONNECTION_STRING"
+mongo = PyMongo(app)
 
 
 # Home Page
